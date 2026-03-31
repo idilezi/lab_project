@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galactic Scout — Контакти</title>
+    <title>Galactic Scout — Контакти та Реєстрація</title>
 </head>
 <body>
 
@@ -16,6 +16,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="price.html">Тарифи та графік</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
@@ -23,19 +25,62 @@
 
     <main>
         <section>
-            <h2>Контактна інформація</h2>
-            <p>Центр підтримки (Земля): 
-                <a href="tel:+380441234567">+38 (044) 123-45-67</a> 
-            </p>
-            <p>Пряма лінія (Радіоканал): 
-                <a href="mailto:contact@galactic-scout.com">contact@galactic-scout.com</a> 
-            </p>
+            <h2>Стати добровольцем експедиції</h2>
+            <form action="#" method="POST">
+                
+                <div>
+                    <label for="username">Повне ім'я:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Ваше прізвище та ім'я" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="useremail">Міжгалактична пошта (Email):</label><br>
+                    <input type="email" id="useremail" name="useremail" placeholder="pilot@galaxy.com" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="mission">Оберіть місію:</label>
+                    <select id="mission" name="mission">
+                        <option value="mars">Колонізація Марса</option>
+                        <option value="europa">Океани Європи</option>
+                        <option value="deep">Далекий космос</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <p>Ваш досвід польотів:</p>
+                    <input type="radio" id="novice" name="experience" value="novice" checked>
+                    <label for="novice">Новачок</label>
+
+                    <input type="radio" id="pilot" name="experience" value="pilot">
+                    <label for="pilot">Досвідчений пілот</label>
+                </div>
+                <br>
+
+                <div>
+                    <label for="motivation">Чому ви хочете полетіти?</label><br>
+                    <textarea id="motivation" name="motivation" rows="4" cols="40" placeholder="Ваша мотивація..."></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я погоджуюсь на кріозаморозку під час польоту</label>
+                </div>
+                <br>
+
+                <button type="submit">Надіслати заявку</button>
+                <button type="reset">Очистити форму</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <hr>
-        <p><a href="index.html">Повернутися на головну</a></p>
+        <p>&copy; 2026 Galactic Scout. Ваша доля — серед зірок.</p>
     </footer>
 
 </body>
