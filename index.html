@@ -6,6 +6,8 @@
     <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/1200x/b8/60/38/b86038da92402606a56069b501f14ed3.jpg">
     <title>Galactic Scout - Пошук позаземних цивілізацій</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.npmmirror.com/package/swiper@11.1.1/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrapper">
@@ -71,6 +73,25 @@
                 <p><em>Запис радіохвиль, перетворених у звуковий діапазон.</em></p>
             </section>
 
+            <section class="gallery">
+                <div class="gallery-item item-1"><img src="img/photo1.png" alt="Велике фото"></div>
+                <div class="gallery-item item-2"><img src="img/photo2.png" alt="Широке фото"></div>
+                <div class="gallery-item item-3"><img src="img/photo3.png" alt="Фото 3"></div>
+                <div class="gallery-item item-4"><img src="img/photo4.png" alt="Фото 4"></div>
+                <div class="gallery-item item-5"><img src="img/photo5.png" alt="Фото 5"></div>
+            </section>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Відгук 1: Космос неймовірний!</div>
+                    <div class="swiper-slide">Відгук 2: Найкраща експедиція в моєму житті.</div>
+                    <div class="swiper-slide">Відгук 3: Galactic Scout — професіонали.</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
             <section>
                 <h2>Контактна інформація</h2>
                 <p>Центральний офіс:<br>
@@ -101,5 +122,8 @@
         </footer>
         
     </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
