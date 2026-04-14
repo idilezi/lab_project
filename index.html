@@ -101,6 +101,21 @@
                 </svg>
             </div>
 
+
+            <section class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="desc">Опис</button>
+                    <button class="tab-btn" data-tab="chars">Характеристики</button>
+                    <button class="tab-btn" data-tab="reviews">Відгуки</button>
+                </div>
+
+                <div class="tabs-body">
+                    <div id="desc" class="tab-content active">Тут загальний опис експедиції...</div>
+                    <div id="chars" class="tab-content">Тут технічні характеристики корабля...</div>
+                    <div id="reviews" class="tab-content">Тут будуть відгуки клієнтів...</div>
+                </div>
+            </section>
+
             <section>
                 <h2>Відеогалерея місій</h2>
                 <p>Ми проводимо експедиції до найвіддаленіших куточків галактики, використовуючи найсучасніші технології для збору та аналізу даних.</p>
@@ -155,17 +170,29 @@
 
         <hr>
 
-        <footer class="mt-auto bg-dark text-white p-4 text-center>
+        <footer class="mt-auto bg-dark text-white p-4 text-center">
             <p>Ми в соцмережах:</p>
             <ul>
                 <li><a href="https://instagram.com/nasa" target="_blank">Instagram </a></li> 
                 <li><a href="https://facebook.com" target="_blank">Facebook</a></li> 
             </ul>
             <p>&copy; 2026 Galactic Scout. Всі права захищені. <em>Зоряне небо належить усім.</em></p>
+            <button id="open-modal-btn">Зв'язатися з нами</button>
         </footer>
         
     </div> 
 
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window">
+            <span class="close-modal">&times;</span>
+            <h2>Залиште заявку</h2>
+            <form>
+                <input type="text" placeholder="Ваше ім'я"><br><br>
+                <input type="tel" placeholder="Ваш телефон"><br><br>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
