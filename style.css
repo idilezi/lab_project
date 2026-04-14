@@ -234,3 +234,25 @@ input, textarea, select {
 .swiper-slide-active p {
     transition-delay: 0.3s;
 }
+
+.galactic-svg {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galactic-svg:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.galactic-svg:hover .svg-shape {
+    fill: #f72585;
+    transition: 0.3s;
+}
+
+.galactic-svg circle {
+    transition: stroke 0.3s;
+}
+
+.galactic-svg:hover circle {
+    stroke: #f72585;
+}

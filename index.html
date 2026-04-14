@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.npmmirror.com/package/swiper@11.1.1/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="wrapper">
         
         <header>
@@ -75,6 +77,30 @@
                 </ul>
             </section>
 
+            <section class="container mt-5">
+                <h2 class="text-center mb-4">Наші космічні технології</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-shuttle-space fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Флот кораблів</h5>
+                                <p class="card-text">Сучасні крейсери для міжзоряних подорожей.</p>
+                                <a href="#" class="btn btn-outline-primary">Докладніше</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <div class="text-center my-5">
+                <h3>Символ експедиції</h3>
+                <svg class="galactic-svg" width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#4cc9f0" stroke-width="3" fill="none" />
+                    <polygon points="50,20 20,80 80,80" fill="#4cc9f0" class="svg-shape" />
+                </svg>
+            </div>
+
             <section>
                 <h2>Відеогалерея місій</h2>
                 <p>Ми проводимо експедиції до найвіддаленіших куточків галактики, використовуючи найсучасніші технології для збору та аналізу даних.</p>
@@ -129,7 +155,7 @@
 
         <hr>
 
-        <footer>
+        <footer class="mt-auto bg-dark text-white p-4 text-center>
             <p>Ми в соцмережах:</p>
             <ul>
                 <li><a href="https://instagram.com/nasa" target="_blank">Instagram </a></li> 
@@ -142,5 +168,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
